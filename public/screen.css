@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 html {
   text-size-adjust: 100%;
 }
@@ -5,4 +7,247 @@ html {
 body {
   margin: 0;
   font: 16px / 1 sans-serif;
+  background-image: url("./img/space.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  padding-top: 3em;
+}
+
+section ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+.profilepic {
+  width: 200px;
+}
+
+.profilepic img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* blockquote {
+}
+*/
+
+blockquote div.bubble {
+  background-color: hsla(360, 100%, 100%, 0.71);
+  border-radius: 5px;
+  padding: 0.2em 2em;
+}
+
+blockquote img {
+  padding-left: 1.3em;
+  opacity: 0.71;
+}
+
+section .title {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+section .subtitle {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+main {
+  background-color: hsla(0, 0%, 0%, 0.52);
+  margin-bottom: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+main .gallery ul {
+  display: flex;
+  padding-left: 0;
+}
+
+/*
+main .gallery li {
+  border: 1px solid red;
+  flex: 1;
+  height: 150px;
+  margin: 0.6em;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .gallery li img {
+  width: 100%;
+}
+*/
+main .gallery li {
+  /*  border: 1px solid red; */
+  flex: 1;
+  height: 150px;
+  margin: 0.6em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsla(360, 100%, 100%, 0);
+}
+
+main .gallery .one {
+  background-image: url("./img/one-list.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main .gallery .two {
+  background-image: url("./img/make-it-rain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main .gallery .three {
+  background-image: url("./img/bomb-sniffer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main .gallery .four {
+  background-image: url("./img/sensei-sense.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.articles {
+  background-color: hsla(0, 0%, 0%, 0.6);
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.react,
+.fizzbuzz {
+  /*  background-image: url("./img/react.png");  */
+  background-repeat: no-repeat;
+  background-color: hsla(360, 100%, 100%, 1);
+  margin-left: 2%;
+  margin-right: 2%;
+
+  /*  margin: 2%;
+  padding-left: 1em;
+  padding-right:1em;
+  padding-bottom:0;
+  padding-top: 3em;  */
+  border-radius: 10px;
+}
+
+article {
+  position: relative;
+}
+
+/* still not sure what it does in relation to 'a' - read more */
+
+article.react h1 {
+  color: hsla(360, 100%, 100%, 0);
+  background-image: url("./img/react.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 0;
+  padding-bottom: 1.5em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+article p {
+  padding: 0 3em;
+
+  /*
+  padding-left: 1em;
+  padding-right:1em;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  margin-top: 5px;
+  margin-bottom: -15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+}
+
+article time {
+  font-size: 0.5em;
+}
+
+article h2 {
+  padding-left: 2em;
+}
+
+article.fizzbuzz h1 {
+  color: hsla(360, 100%, 100%, 0);
+  background-image: url("./img/code.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 0;
+  padding-bottom: 1.2em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 1em;
+}
+
+article p {
+  padding-bottom: 1.2em;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+.readmore {
+  background-color: #3964c3;
+  border-radius: 8px;
+  position: absolute;
+  right: 8px;
+  bottom: -8px;
+  padding: 6px;
+}
+
+/* not sure about what exactly 'right' and 'bottom' are. How do they work in a frame? */
+
+.readmore:link,
+.readmore:visited {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  padding-top: 2em;
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+footer p {
+  color: white;
+  font-size: 1.5em;
+  padding-bottom: 0.3em;
+}
+
+div.sns i {
+  color: white;
+  margin: 0.3em;
+}
+
+footer p.copyright {
+  padding-top: 3em;
+  padding-bottom: 2em;
+  font-size: 0.6em;
 }
